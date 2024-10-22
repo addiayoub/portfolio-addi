@@ -10,7 +10,6 @@ const { data, slug } = Astro.props.project;
 
 <a class="card" href={`/work/${slug}`}>
 	<span class="title">{data.title}</span>
-	<video controls loading="lazy" decoding="async">
 		<source src={data.video} type="video/mp4" />
 		Your browser does not support the video tag.
 	</video>
